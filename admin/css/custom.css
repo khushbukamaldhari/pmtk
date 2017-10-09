@@ -1,0 +1,43 @@
+.x-navigation > li.xn-logo > a:first-child{
+    background-color: #a51d1d;
+}
+.x-navigation li.active > a .fa, .x-navigation li.active > a .glyphicon{
+    color: #a51d1d;    
+}
+.check{
+    margin-right: 20px;
+}
+.show-up{
+    z-index: 999 !important;
+}
+/*khushbu 07-10-2017*/
+@media screen and (max-width: 532px){
+    .wizard .anchor li:nth-child(3) a:after ,.wizard .anchor li:nth-child(4) a:after {
+        margin-bottom: 0px;
+    }
+    .wizard .anchor li:nth-child(3) a:before ,.wizard .anchor li:nth-child(4) a:before {
+        margin-bottom: 0px;
+    }
+}
+/*khushbu 07-10-2017 changes end*/
+.input-group .form-control {
+    z-index: unset !important;
+}
+.bootstrap-select.btn-group .dropdown-menu {
+    max-height: 227px !important;
+    margin: 0px;
+}
+.file-preview{
+    width: 95%;
+}
+.file-preview img{
+    max-width: 90%;
+}
+
+/*khushbu 07-10-2017*/
+@media screen and (max-width: 500px){
+    .wizard .anchor li a .stepDesc {
+        display: none; 
+    }
+}
+/*khushbu 07-10-2017 changes end*/
