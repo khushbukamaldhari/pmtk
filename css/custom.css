@@ -181,6 +181,19 @@ a.lnk_tab.active h5{
     background: transparent;
 }
 .page-container .page-header .col-md-12 .navigation > li > a {
+    display: block;
+    float: left;
+    line-height: 0px;
+    color: #757575;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0px 0px;
+    height: 48px;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    background: transparent;
+}
+.page-container .page-header .col-md-12 .navigation > li > a {
     /*color: #fff;*/
 }
 .page-container .page-header .col-md-12 .navigation {
@@ -211,7 +224,6 @@ a.lnk_tab.active h5{
     padding: 9px 19px;
     background: #fff;
     border: 0px solid #ddd;
-    border-radius: 5px;
     color: #6d6d6d;
     box-shadow: 0 0 0 2px #ddd, 0px 2px 0px 2px rgba(0,0,0,.08);
 }
@@ -222,7 +234,6 @@ a.lnk_tab.active h5{
     padding: 9px 19px;
     background: #fff;
     border: 0px solid #ccc;
-    border-radius: 5px;
     box-shadow: 0 0 0 2px #cccccc, 0px 2px 0px 2px rgba(0,0,0,.08);
 }
 .btn-custom1{
@@ -1399,3 +1410,135 @@ a.lnk_tab{
     overflow: hidden;
     margin-bottom: 10px;
 }
+.open>.dropdown-menu {
+    display: inline-grid;
+    padding:2px 0px  2px 10px;
+    margin-left: 7px;
+    box-shadow: 0 0 0 1px #da8ae3, 0px 1px 0px 2px rgba(0,0,0,.08);
+}
+.dropdown-menu:before {
+    bottom: 0;
+    left: 6px;
+    margin-left: 0px;
+    border:none;
+}
+.dropdown-menu:after{
+    bottom: 0;
+    left: 6px;
+}
+.open a button{
+    box-shadow: 0 0 0 2px #da8ae3, 0px 1px 0px 2px rgba(0,0,0,.08);
+}
+.open>.dropdown-menu  li{
+    padding-bottom: 5px;
+}
+.sign_up{
+    background: #da8ae3;
+    color: #fff;
+    box-shadow: unset;
+}
+.sign_up:hover{
+    color: #fff;
+    border:none;
+     box-shadow: unset;
+     background: #d07cda;
+}
+/*Uttam Jain 09-10-17*/
+.check-resp {
+    margin-left: 10px;
+    /*float: left;*/
+    /*left: 12px;*/
+    /*position: relative;*/
+}
+.check-photo {
+    float: left;
+    left: 0px;
+}
+.feature-img {
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #734ad2;
+    max-width: 100%;
+    margin-top: 20px;
+}
+.div-img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+.div-left {
+    text-align: center;
+}
+/*Uttam Jain 10-10-17*/
+.cust-feature {
+    color: #bd7abf;
+}
+.anchor-img {
+    display: block;
+}
+.check-top {
+    margin-top: 30px;
+}
+/*.check-div {*/
+    /*margin-top: 30px;*/
+/*}*/
+/*End of code Uttam Jain 09-10-17*/
+
+@media screen and (max-width: 770px){
+    .radio-gen {
+        top: 43px;
+    }
+    .opt-select {
+        top: 15px;
+        /*left: 0px;*/
+        position: relative;
+        max-width: 100%;
+    }
+    .from-select {
+        top: 15px;
+        /*left: 0px;*/
+        position: relative;
+        max-width: 100%;
+    }
+    .to-select {
+        top: 15px;
+        left: 10px;
+        max-width: 100%;
+    }
+    .btn-div {
+        top: 30px;
+        left: auto !important;
+        width: 100%;
+    }
+    .search-btn {
+        left: auto;
+    }
+    .link-search {
+        left: auto;
+        float: left;
+    }
+    .add-btn {
+        float: right;
+        left: auto;
+    }
+    .test-list {
+        top: auto;
+    }
+    .news-text {
+        margin-bottom: auto;
+    }
+    .btn-unsubs {
+        top: 15px;
+    }
+}
+@media screen and (max-width: 380px){
+    .check-div {
+        min-width: 100%;
+    }
+}
+@media screen and (min-width: 380px) and (max-width: 422px){
+    .check-div {
+        min-width: 100%;
+    }
+}
+/*End of code Uttam Jain 09-10-17*/

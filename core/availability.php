@@ -41,7 +41,7 @@ class availability {
             }
             return $arr_avail_label;
         } else {
-            $str_options = '<option value="NA">NA</option>';
+            $str_options = '<option value="NA">N/A</option>';
             foreach ( $arr_avail as $time_avail ){
                 $str_options .= '<option value="' . $time_avail['value'] . '">' . $time_avail['label'] . '</option>';
             }

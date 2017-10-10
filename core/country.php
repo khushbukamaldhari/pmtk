@@ -18,7 +18,7 @@ class country {
         
     function show_countries() {        
         $all_fields = $this->get_all_countries();
-        $options = '<option value="">- Select Country -</option>';
+        $options = '<option value="">- Country -</option>';
         //$options = '';
         foreach ($all_fields as $key => $field) {
             $options .= '<option value="' . $field['in_country_id'] . '">' . $field['st_country_name'] . '</option>';        

@@ -60,24 +60,6 @@ class user {
             }
         }
     }
-    function update_usermeta( $user_id = 0, $key = '', $value = '' ) {
-        if( $user_id > 0 && trim( $key ) !== '' ){
-            global $mydb;            
-            $arr_data = array(
-                'st_meta_value' => $value
-            );
-            $where = array(                
-                'in_user_id' => $user_id,
-                'st_meta_key' => $key
-            );
-            $update_id = $mydb->update( TBL_USERMETA, $arr_data, $where );            
-            if( $update_id != 0 && $update_id > 0 ){
-                return( $update_id );
-            } else {
-                return 0;
-            }
-        }
-    }
     
     function get_user_data( $user_id ) {
         if( $user_id > 0 ){
@@ -94,15 +76,10 @@ class user {
         global $mydb;
         if( $user_id > 0 ){
             $where = '';
-            $select = 'st_meta_value';
-            if( trim( $meta_key ) == '' ){
-                $select = 'st_meta_key, st_meta_value';
-            }
             if( trim( $meta_key ) !== '' ){
                 $where .= ' AND st_meta_key = "' . $meta_key . '"';
             }
-            $str_query = 'SELECT ' . $select . ' FROM ' . $mydb->prefix . TBL_USERMETA . ' WHERE  in_user_id = ' . $user_id . $where;        
-            //echo $str_query;
+            $str_query = 'SELECT st_meta_value FROM ' . $mydb->prefix . TBL_USERMETA . ' WHERE  in_user_id = ' . $user_id . $where;        
             $response = $mydb->query($str_query);
             //echo '<pre>'; print_r($response); echo '</pre>';
             if ($response != 0 && count($response) > 0) { 
@@ -174,14 +151,17 @@ class user {
 //        }
 //    }
     
-    function get_cook( $gender = '' ) {
+    function get_cook( $gender = '', $limit = '' ) {
         $where = '';
         if( trim( $gender ) !== '' ){
             $where = ' user.st_gender = "' . $gender . '" AND ';
         }
+        if( trim($limit) !== '') {
+            $new_limit = $limit;
+        }
         global $mydb;
         $str_query = 'SELECT user.in_user_id, user.st_username, user.st_full_name, user.st_email_id, user.st_user_type, user.st_gender, user.dt_created_at FROM ' . $mydb->prefix . TBL_USER  . ' user '                
-                . 'WHERE user.st_user_type = "cook" AND ' . $where . ' user.in_is_active = 1 LIMIT 0,30';
+                . 'WHERE user.st_user_type = "cook" AND ' . $where . ' user.in_is_active = 1 LIMIT 0,'.$new_limit.'';
         //echo $str_query;
         $response = $mydb->query( $str_query );
         if ($response != 0 && count($response) > 0) {

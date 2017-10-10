@@ -14,10 +14,10 @@ $featured_f = $user->get_featured_cook( 'F' );
     <div class="container main-container">
         <div class="row">
             <div class="col-lg-8 col-md-8  col-xs-12 col-sm-12">
-                <div class='col-md-12'>
-                    <div class='col-md-12 pv-profile-section pv-top-card-section artdeco-container-card profile_pic_bg'>
+                <div class='col-md-12 content'>
+                    <div class='col-md-12 pv-profile-section pv-top-card-section artdeco-container-card profile_pic_bg content-block'>
                         <div class="featured">
-                            <h3 class="border-img">Featured Men</h3>
+                            <h3 class="border-img feature-title">Featured Men</h3>
                             <ul class="row featured clearfix with-pictures" style="padding-left: 0px;">
                                 <?php
                                 if ( !empty( $featured_m ) ) {
@@ -25,12 +25,12 @@ $featured_f = $user->get_featured_cook( 'F' );
                                         foreach ( $featured_m as $men ) {
                                             $profile = $user->get_user_images( $men['in_user_id'], 'profile' );
                                             ?>
-                                            <li  class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                                            <li class="col-md-4 col-lg-4 col-sm-6 col-xs-12 link-name" style="text-align:left;">
                                                 <a title="<?php echo $men['st_full_name']; ?>" href="<?php echo BASE_URL . 'user_profile.php?user_id=' . $men['in_user_id']; ?>">
                                                     <!--<img alt="<?php echo $men['st_full_name']; ?>" src="<?php echo $profile; ?>">-->
                                                     <div class="user-profile" style="background: url('<?php echo $profile; ?>');" ></div> 
                                                 </a>
-                                                <a class="link" title="<?php echo $men['st_full_name']; ?>" href="<?php echo BASE_URL . 'user_profile.php?user_id=' . $men['in_user_id']; ?>"><?php echo $men['st_full_name']; ?>
+                                                <a class="link link-name" title="<?php echo $men['st_full_name']; ?>" href="<?php echo BASE_URL . 'user_profile.php?user_id=' . $men['in_user_id']; ?>"><?php echo $men['st_full_name']; ?>
                                                 </a>
                                             </li>
                                             <?php
@@ -54,8 +54,8 @@ $featured_f = $user->get_featured_cook( 'F' );
                         </div>
                     </div>
                 </div>
-                <div class='col-md-12'>
-                    <div class='col-md-12 pv-profile-section pv-top-card-section artdeco-container-card profile_pic_bg'>
+                <div class='col-md-12 content'>
+                    <div class='col-md-12 pv-profile-section pv-top-card-section artdeco-container-card profile_pic_bg content-block'>
                         <div class="featured">
                             <h3 class="border-img">Featured Women</h3>
                             <ul class="row featured clearfix with-pictures" style="padding-left: 0px;">
@@ -93,12 +93,59 @@ $featured_f = $user->get_featured_cook( 'F' );
                         </div>
                     </div>
                 </div>
+                <div class='col-md-12 content'>
+                    <div class='col-md-12 pv-profile-section pv-top-card-section artdeco-container-card profile_pic_bg content-block'>
+                        <div class="featured">
+                            <h3 class="border-img feature-title">Recently Added</h3>
+                            <ul class="row featured clearfix with-pictures" style="padding-left: 0px;">
+                                <?php
+                                if ( !empty( $featured_m ) ) {
+                                    if( isset( $featured_m[0] ) ){
+                                        foreach ( $featured_m as $men ) {
+                                            $profile = $user->get_user_images( $men['in_user_id'], 'profile' );
+                                            ?>
+                                            <li class="col-md-4 col-lg-4 col-sm-6 col-xs-12 link-name" style="text-align:left;">
+                                                <a title="<?php echo $men['st_full_name']; ?>" href="<?php echo BASE_URL . 'user_profile.php?user_id=' . $men['in_user_id']; ?>">
+                                                    <!--<img alt="<?php echo $men['st_full_name']; ?>" src="<?php echo $profile; ?>">-->
+                                                    <div class="user-profile" style="background: url('<?php echo $profile; ?>');" ></div>
+                                                </a>
+                                                <a class="link link-name" title="<?php echo $men['st_full_name']; ?>" href="<?php echo BASE_URL . 'user_profile.php?user_id=' . $men['in_user_id']; ?>"><?php echo $men['st_full_name']; ?>
+                                                </a>
+                                            </li>
+                                            <?php
+                                        }
+                                    } else {
+                                        $men = $featured_m;
+                                        $profile = $user->get_user_images( $men['in_user_id'], 'profile' );
+                                        ?>
+                                        <li  class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                                            <a title="<?php echo $men['st_full_name']; ?>" href="<?php echo BASE_URL . 'user_profile.php?user_id=' . $men['in_user_id']; ?>">
+                                                <div class="user-profile" style="background: url('<?php echo $profile; ?>');" ></div>
+                                            </a>
+                                            <a class="link" title="<?php echo $men['st_full_name']; ?>" href="<?php echo BASE_URL . 'user_profile.php?user_id=' . $men['in_user_id']; ?>"><?php echo $men['st_full_name']; ?>
+                                            </a>
+                                        </li>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 sidebar">
                 <?php include_once FL_SEARCH_DISTANCE; ?>
                 <?php include_once FL_SEARCH_LOCATION; ?>
-                <?php // include_once FL_SEARCH_ADVANCED; ?>                
+                <?php // include_once FL_SEARCH_ADVANCED; ?>
+                <?php include_once FL_SEARCH_COOK; ?>
+                <?php include_once FL_FAQ; ?>
+                <?php include_once FL_TESTIMONIALS; ?>
+                <?php include_once FL_NEWSLETTER; ?>
+                <?php // include_once FL_FEATURED_COOK; ?>
+                <?php include_once FL_COMMENT; ?>
+                <?php include_once FL_FEATURED_CUSTOMER; ?>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 <?php
 
-define('BASE_DIR', 'pmtk');
+define('BASE_DIR', 'cook');
 define('CORE_DIR', 'core');
 define('ADMIN_DIR', 'admin');
 define('DIR_SEPERATOR', '/');
@@ -25,6 +25,26 @@ define('USER_AJAXPRO', ADMIN_JS_PLUGINS_PATH . 'upload_crop' . 'ajaxpro.php');
 define('TMP_UPLOADS', BASE_PATH . DIR_SEPERATOR . 'tmp_uploads' . DIR_SEPERATOR);
 define('TMP_UPLOADS_URL', BASE_URL . DIR_SEPERATOR . 'tmp_uploads' . DIR_SEPERATOR);
 define('SIDEBAR_URL', BASE_PATH . DIR_SEPERATOR . 'includes' . DIR_SEPERATOR . 'sidebar' . DIR_SEPERATOR);
+define('FL_SEARCH_DISTANCE', SIDEBAR_URL . 'search_distance.php');
+define('FL_SEARCH_LOCATION', SIDEBAR_URL . 'search_location.php');
+define('FL_SEARCH_ADVANCED', SIDEBAR_URL . 'search_advanced.php');
+
+/*Uttam Jain 07-10-17*/
+define('FL_SEARCH_COOK', SIDEBAR_URL . 'search_cook.php');
+define('FL_FAQ', SIDEBAR_URL . 'search_faq.php');
+define('FL_TESTIMONIALS', SIDEBAR_URL . 'search_test.php');
+define('FL_NEWSLETTER', SIDEBAR_URL . 'search_news.php');
+/*End of code Uttam Jain 07-10-17*/
+
+/*Uttam Jain 09-10-17*/
+define('FL_FEATURED_COOK', SIDEBAR_URL . 'search_featured_cook.php');
+/*End of code Uttam Jain 09-10-17*/
+
+/*Uttam Jain 10-10-17*/
+define('FL_COMMENT', SIDEBAR_URL . 'search_comment.php');
+define('FL_FEATURED_CUSTOMER', SIDEBAR_URL . 'search_customer.php');
+/*End of code Uttam Jain 10-10-17*/
+
 
 //Database
 define('HOSTNAME', 'localhost');
@@ -32,7 +52,6 @@ define('DBUSERNAME', 'root');
 define('DBPASSWORD', '');
 define('DBNAME', 'db_cook');
 define('DBPREFIX', 'cook_');
-
 
 //Table Names
 define('TBL_OPTIONS', 'options');
@@ -47,7 +66,6 @@ define('TBL_USER_AVAILABILITY', 'user_availability');
 define('USER_PRO_DIR', 'user_profile');
 define('USER_PROFILE', BASE_PATH . DIR_SEPERATOR . 'user_profile.php');
 define('USER_PRO_DETAIL', BASE_PATH . DIR_SEPERATOR . USER_PRO_DIR . DIR_SEPERATOR . 'user_detail.php');
-define('USER_PRO_SPECIALITY', BASE_PATH . DIR_SEPERATOR . USER_PRO_DIR . DIR_SEPERATOR . 'user_speciality.php');
 define('USER_PRO_COVER_LETTER', BASE_PATH . DIR_SEPERATOR . USER_PRO_DIR . DIR_SEPERATOR . 'user_cover_letter.php');
 define('USER_PRO_AVAILABILITY', BASE_PATH . DIR_SEPERATOR . USER_PRO_DIR . DIR_SEPERATOR . 'user_availability.php');
 define('USER_PRO_BIOGRAPHY', BASE_PATH . DIR_SEPERATOR . USER_PRO_DIR . DIR_SEPERATOR . 'user_biography.php');
@@ -71,15 +89,6 @@ define('FL_COMMON', BASE_PATH . DIR_SEPERATOR . 'common.php');
 define('FL_AVAILABILITY', BASE_PATH . DIR_SEPERATOR . CORE_DIR . DIR_SEPERATOR . 'availability.php');
 define('FL_OPTIONS', BASE_PATH . DIR_SEPERATOR . CORE_DIR . DIR_SEPERATOR . 'options.php');
 define('FL_COUNTRY', BASE_PATH . DIR_SEPERATOR . CORE_DIR . DIR_SEPERATOR . 'country.php');
-
-
-define('FL_SEARCH_DISTANCE', SIDEBAR_URL . 'search_distance.php');
-define('FL_SEARCH_LOCATION', SIDEBAR_URL . 'search_location.php');
-define('FL_SEARCH_ADVANCED', SIDEBAR_URL . 'search_advanced.php');
-define('FL_SEARCH_COOK', SIDEBAR_URL . 'search_cook.php');
-define('FL_FAQ', SIDEBAR_URL . 'search_faq.php');
-define('FL_TESTIMONIALS', SIDEBAR_URL . 'search_test.php');
-define('FL_NEWSLETTER', SIDEBAR_URL . 'search_news.php');
 
 error_reporting(0);
 

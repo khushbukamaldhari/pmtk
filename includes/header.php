@@ -44,13 +44,20 @@
                                     </li>
                                 <?php } else { ?>
                                     <li>
-                                        <a href="<?php echo BASE_URL . 'user_login.php'; ?>"> <button class="btn btn-custom" ><span style="color: #bd7abf;font-size: 13px;padding: 2px 12px;background: url(img/gallary.png) 0 -744px no-repeat;"></span>Sign In</button> </a>               
+                                        <a style="color:#fff;" href="<?php echo BASE_URL . 'user_registration.php'; ?>"> <button  class="btn btn-custom sign_up" ><span style="color: #fff;font-size: 20px;" class="fa fa-lock"></span>Sign up</button></a>
                                     </li>
                                     <li>
-                                        <a href="<?php echo BASE_URL . 'user_registration.php'; ?>"> <button class="btn btn-custom" ><span style="color: #bd7abf;font-size: 13px;padding: 2px 12px;background: url(img/gallary.png) 0 -773px no-repeat;"></span>Sign Up</button></a>
+                                        <a href="<?php echo BASE_URL . 'user_login.php'; ?>"> <button class="btn btn-custom" ><span style="color: #bd7abf;font-size: 13px;padding: 2px 12px;background: url(img/gallary.png) 0 -744px no-repeat;"></span>Sign in</button> </a>               
                                     </li>
+                                    
                                     <li>
-                                        <a  href="#"> <button class="btn btn-custom" >English<span style="color: #bd7abf;font-size: 13px;padding: 2px 18px;background: url(img/gallary.png) 0 -1433px no-repeat;"></span></button></a>
+                                        <a  href="#" data-toggle="dropdown"> <button class="btn btn-custom" >English<span style="color: #bd7abf;font-size: 13px;padding: 2px 18px;background: url(img/gallary.png) 0 -1433px no-repeat;"></span></button></a>
+                                        <ul class="dropdown-menu" style="min-width:127px;" role="menu">
+                                            <li>Deutsch</li>
+                                            <li>Ελληνικά</li>
+                                            <li>Italiano</li>
+                                            <li>Español</li>
+                                        </ul>
                                     </li>
                                 <?php } ?>
 
