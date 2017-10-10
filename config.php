@@ -1,6 +1,7 @@
 <?php
 
 define('BASE_DIR', 'pmtk');
+define('TEST', 'HELLO WoRLD');
 define('CORE_DIR', 'core');    
 define('ADMIN_DIR', 'admin');
 define('DIR_SEPERATOR', '/');
