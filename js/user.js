@@ -217,14 +217,14 @@
     $("#profile").click(function () {
         $(".stepContainer").height(450);
         if ($(window).width() < 775) {
-            $(".stepContainer").height(875);
+            $(".stepContainer").height(550);
         }
         $("#profile_image_display").show();
         $("#cover_image_display").hide();
         return false;
     });
     $("#cover").click(function () {
-        $(".stepContainer").height(750);
+        $(".stepContainer").height(550);
         $("#cover_image_display").show();
         $("#profile_image_display").hide();
         return false;

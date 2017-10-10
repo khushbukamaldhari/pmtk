@@ -62,7 +62,7 @@ $user_membership = $user_city = $user->get_user_meta( $user_id, 'membership', tr
                                     <div class="pane-body col-md-9" id="user_inner_blocks">
                                         <div class="col-md-12" id="user_blocks">
                                             <?php
-                                                include_once USER_SPECIALITY;                        
+                                                include_once USER_PRO_SPECIALITY;                        
                                                 include_once USER_PRO_AVAILABILITY;                       
                                                 include_once USER_PRO_BIOGRAPHY;
                                                 include_once USER_PRO_CONTACT;
@@ -119,7 +119,7 @@ $user_membership = $user_city = $user->get_user_meta( $user_id, 'membership', tr
                                                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                                     <div class="panel panel-warning">
                                                         <div class="panel-body panel-body-pricing">
-                                                            <h2>Basic Chef<br><small>$9.99</small></h2>                                
+                                                            <h2>Basic Chef<br><small>Free</small></h2>                                
                                                             <p><span class="fa fa-caret-right"></span> Add Profiles</p>
                                                             <p><span class="fa fa-caret-right"></span> View contact details</p>
                                                             <p><span class="fa fa-caret-right"></span> Contact sellers</p>
@@ -135,7 +135,7 @@ $user_membership = $user_city = $user->get_user_meta( $user_id, 'membership', tr
                                                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                                     <div class="panel panel-danger">
                                                         <div class="panel-body panel-body-pricing">
-                                                            <h2>Premium<br><small>Free</small></h2>                                
+                                                            <h2>Premium<br><small>$9.99</small></h2>                                
                                                             <p><span class="fa fa-caret-right"></span> Add Profiles</p>
                                                             <p><span class="fa fa-caret-right"></span> View contact details</p>
                                                             <p><span class="fa fa-caret-right"></span> Contact sellers</p>
@@ -165,6 +165,9 @@ $user_membership = $user_city = $user->get_user_meta( $user_id, 'membership', tr
                     <div>
                         <button class="col-md-12 col-sm-12 col-lg-12 btn btn-info pv-top-letter-section__sidebar_button">Edit Your Profile</button>
                     </div>
+                    <div>
+                        <button class="col-md-12 col-sm-12 col-lg-12 btn btn-info pv-top-letter-section__sidebar_button">Add Photo Gallery</button>
+                    </div>
                 </div>
             </div>
 <!--                <div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 ">
@@ -183,3 +186,33 @@ include_once FL_USER_FOOTER_INCLUDE;
 <script type="text/javascript" src="<?php echo ADMIN_JS_PATH; ?>actions.js"></script>
 <?php
 include_once FL_USER_FOOTER;
+?>
+<script>
+
+    (function ($) {
+
+        //var height = document.getElementById('about_me').style.height;
+        var about_me = $("#about_me").height();
+        if(about_me > 43){
+        //alert(about_me);
+        //$("#about_me").height();]
+        $("#show_more").click(function () {
+            if ($(this).val() == "more") {
+                $(this).val('less');
+                $("#show_more").text('Show Less');
+                $("#about_me").removeClass("showmore");
+                $("#about_me").addClass("showless");
+            } else {
+                $(this).val('more');
+                $("#show_more").text('Show More');
+                $("#about_me").addClass("showmore");
+                $("#about_me").removeClass("showless");
+            }
+        });
+    }
+    else{
+        $("#show_more").css("display","none");
+    }
+    })(jQuery);
+</script>
+<?php

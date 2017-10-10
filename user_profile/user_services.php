@@ -18,7 +18,9 @@ $user_services_offered = $user->get_user_meta( $user_id, "services_offered", tru
                     <?php if( is_array( $user_services_offered ) ) {
                         foreach ($user_services_offered as $val_so) { ?>
                             <div class="col-md-3 col-xs-6 col-sm-6 no-padding ">
-                                <h3 class="pv-top-letter-section__cuisine_type"><?php echo is_array( $val_so ) ? $val_so['st_field_value'] : $val_so ; ?></h3>
+                                <h3 class="pv-top-letter-section__cuisine_type">
+                                    <i class="fa fa-check sym-check"></i>
+                                    <?php echo is_array( $val_so ) ? $val_so['st_field_value'] : $val_so ; ?></h3>
                             </div>
                     <?php 
                         }

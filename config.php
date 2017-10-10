@@ -1,8 +1,7 @@
 <?php
 
-define('BASE_DIR', 'pmtk');
-define('TESTING', 'HELLO');
-define('CORE_DIR', 'core');    
+define('BASE_DIR', 'cook');
+define('CORE_DIR', 'core');
 define('ADMIN_DIR', 'admin');
 define('DIR_SEPERATOR', '/');
 define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . DIR_SEPERATOR . BASE_DIR);
@@ -48,6 +47,7 @@ define('TBL_USER_AVAILABILITY', 'user_availability');
 define('USER_PRO_DIR', 'user_profile');
 define('USER_PROFILE', BASE_PATH . DIR_SEPERATOR . 'user_profile.php');
 define('USER_PRO_DETAIL', BASE_PATH . DIR_SEPERATOR . USER_PRO_DIR . DIR_SEPERATOR . 'user_detail.php');
+define('USER_PRO_SPECIALITY', BASE_PATH . DIR_SEPERATOR . USER_PRO_DIR . DIR_SEPERATOR . 'user_speciality.php');
 define('USER_PRO_COVER_LETTER', BASE_PATH . DIR_SEPERATOR . USER_PRO_DIR . DIR_SEPERATOR . 'user_cover_letter.php');
 define('USER_PRO_AVAILABILITY', BASE_PATH . DIR_SEPERATOR . USER_PRO_DIR . DIR_SEPERATOR . 'user_availability.php');
 define('USER_PRO_BIOGRAPHY', BASE_PATH . DIR_SEPERATOR . USER_PRO_DIR . DIR_SEPERATOR . 'user_biography.php');
@@ -81,7 +81,7 @@ define('FL_FAQ', SIDEBAR_URL . 'search_faq.php');
 define('FL_TESTIMONIALS', SIDEBAR_URL . 'search_test.php');
 define('FL_NEWSLETTER', SIDEBAR_URL . 'search_news.php');
 
-//error_reporting(0);
+error_reporting(0);
 
 require_once FL_CONNECTION;
 require_once FL_COMMON;

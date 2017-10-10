@@ -17,25 +17,27 @@
             $arr_days = $avail->get_days();
         ?>
         <div id="availability" class="collapse in availability">
-            <?php foreach( $user_avail as $avl ){ ?>
-                <div class="row margin-bottom-5">
-                    <?php
+            <ul class="user-pro-list">
+                <?php foreach( $user_avail as $avl ){ ?>
+                    <li class="clearfix">
+                        <?php
                         if( $avl['fl_from'] == 0 && $avl['fl_to'] == 0 ){
                             //$avail_label = 'Not Available';
                         } else {
                             $avail_label = '<div class="auto-width">' . $arr_avail_label[$avl['fl_from']] . ' - </div><div class="auto-width">' . $arr_avail_label[$avl['fl_to']] . '</div>';
                             ?>
-                            <div class="col-md-3 col-xs-6 col-sm-6 no-padding">
+                            <div class="col-md-3 col-xs-6 col-sm-6 list-cell no-padding">
                                 <h4 class="pv-top-letter-section__cuisine_title"><?php echo $arr_days[$avl['st_day']]; ?></h4>
                             </div>
-                            <div class="col-md-9 col-xs-6 col-sm-6 border-left">
+                            <div class="col-md-9 col-xs-6 col-sm-6 list-cell">
                                 <h4 class="pv-top-letter-section-text"><?php echo $avail_label; ?></h4>
                             </div>
                             <?php
                         }
-                    ?>
-                </div>            
-            <?php } ?>            
+                        ?>
+                    </li> 
+                <?php } ?>
+            </ul>      
         </div>
     </div>
 </div>

@@ -26,10 +26,19 @@
                 </div>
                 <div>
                     <div class="display-flex align-items-center justify-center">
-                        <h1 class="pv-top-card-section__name "><?php echo $user_data['st_username']; ?></h1>
+                        <h1 class="pv-top-card-section__name "><?php echo $user_data['st_full_name']; ?></h1>
                     </div>
                     <h2 class="pv-top-card-section__headline"><?php echo $user_data['st_user_type']; ?></h2>
                     <h3 class="pv-top-card-section__account_type"><a href=""><?php echo BASE_URL.$user_data['st_username']; ?></a></h3>
+                </div>
+                <div class="border_top">
+                    <?php
+                    $user_about_me = $user->get_user_meta($user_id, "about_me", true);
+                    ?>
+                    <div id="about_me" class="showmore"> <span><?php echo $user_about_me; ?></span></div>
+                </div>
+                <div style="text-align: center;">
+                    <button class="btn btn-danger" value="more" id="show_more">Show more</button>
                 </div>
             </div>
         </div>

@@ -120,7 +120,7 @@ a.lnk_tab:hover, a.lnk_tab.active, a.lnk_tab_pf:hover, a.lnk_tab_pf.active{
     text-decoration: none;
 }
 a.lnk_tab.active h5{
-        border-right: 4px solid #0088cc;
+    border-right: 4px solid #0088cc;
     background: #eee;
 }
 @media screen and (max-width: 768px){    
@@ -285,9 +285,19 @@ ul.anchor {
         letter-spacing: 0.4px;
         padding: 0px 14px;
         border: 2px solid transparent;
-        height: 58px;
+        height: 44px;
         margin: 5px;
     }
+    .user-pro-list li > div{
+        padding-bottom: 10px;
+    }
+}
+a.lnk_tab.active h5{
+    border-right: 4px solid #0088cc;
+    background: #eee;
+}
+.page-container.page-header-fixed .page-header .page-header-holder .navigation > li > a {
+    height: 53px;
 }
 .btn-edit{
     float: right;
@@ -359,7 +369,7 @@ ul.anchor {
 .hd-5{
     margin-bottom: 10px;
 }
-.lnk-pink, .lnk-pink:visited{    
+.lnk-pink, .lnk-pink:visited{
     color: #c449d3;
     cursor: pointer;
     line-height: 2em;
@@ -368,9 +378,27 @@ ul.anchor {
 .lnk-pink:hover, .lnk-pink div:hover{
     text-decoration: underline !important;
 }
+.sym-check{
+    color: #c449d3;
+    margin-right: 5px;
+}
 .div-ctry{
     max-height: 300px;
     overflow-y: auto;
+}
+.user-pro-list{
+    padding-left: 0;
+    list-style-type: none;
+}
+.user-pro-list li:not(:last-child){
+    border-bottom: 2px #ffecf4 solid;
+    text-decoration: none;
+}
+.user-pro-list li > div:not(:first-child){
+    border-left: 2px #ffecf4 solid;
+}
+.user-pro-list li > div{
+    margin-bottom: 0;
 }
 
 /* Theme */
@@ -720,6 +748,7 @@ select option:disabled {
     padding: 9px;
     font-size: 15px;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 .pv-top-letter-section__show_more{
     padding: 9px;
@@ -841,18 +870,23 @@ ul.featured li {
 @media only screen and (max-width: 1100px){
     .btn-custom1 {
         color: #000;
+        border: none;
+
     }
     .btn-custom1:hover {
-        color: #000;
+        color: #fff;
+        border: none;
     }
     .page-container .page-header .page-header-holder .navigation li > a:before {
         display: none;
     }
     .page-container .page-header .page-header-holder .navigation > li > a:hover {
-        background: #FFF; 
+        color: #fff;
+        background: #bc77be;
     }
     .page-container .page-header .page-header-holder .navigation > li > a {
         color: #000;
+        background: #fff;
     }
     .page-container .page-header .page-header-holder .navigation-toggle {
         display: inline-flex;
@@ -1051,7 +1085,7 @@ ul.featured li {
         padding: 0px 10px 0px 20px;
         border: 0px;
         border-bottom: 1px solid #E5E5E5;
-       background: #bc77be;
+        background: #bc77be;
     }
     .page-container .page-header .page-header-holder .navigation_user li > a:hover {
         background: #F0F0F0;
@@ -1080,9 +1114,10 @@ ul.featured li {
     .page-container .page-header .page-header-holder .navigation_user li.open > a:before {
         content: "\f107";
     }
-    .page-container .page-header .page-header-holder .navigation > li > a {
-        background: #bc77be;
-    }
+    /*    .page-container .page-header .page-header-holder .navigation > li > a {
+            background: #bc77be;
+            color: #fff;
+        }*/
     .page-container .page-header .page-header-holder .navigation_user > li > a:hover {
         border-bottom: 1px solid #E5E5E5;
         background: #F5F5F5;
@@ -1114,10 +1149,12 @@ ul.featured li {
         display: none;
     }
     .page-container .page-header .page-header-holder .navigation_user > li > a:hover {
-        background: #FFF; 
+        background: #bc77be; 
+        color: #fff; 
     }
     .page-container .page-header .page-header-holder .navigation_user > li > a {
         color: #000;
+        background: #fff;
     }
     .logo1{
         display: block;
@@ -1275,7 +1312,7 @@ a.lnk_tab{
 .add-btn{
     position: relative;
     left: 130px;
-/*    background: #bd7abf;*/
+    /*    background: #bd7abf;*/
     border: none;
     /*color: #FFFFFF;*/
     border-radius: 5px;
@@ -1305,3 +1342,17 @@ a.lnk_tab{
     position: relative;
 }
 /*End of Sidebar css BY: Uttam Jain Dt:07-10-17*/
+.border_top{
+    border-top: 1px #cdcfd2 solid;
+    padding-top:24px;
+    margin-top: 24px;
+}
+.showless{
+    height: auto;
+    margin-bottom: 10px;
+}
+.showmore{
+    max-height:43px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
