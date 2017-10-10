@@ -24,7 +24,7 @@
 
                 <div class='col-md-12 header-up'>
                     <div class='col-md-12 pv-profile-section pv-top-card-section header-top '>
-                        <div class="container" style="margin: 18px auto;"> 
+                        <div class="container" style="margin: 13px auto;"> 
                             <!-- page logo -->
                             <div class="logo">
                                 <a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL . 'img/logo.png' ?>" alt="Pay Me to Cook" /> </a>
@@ -44,10 +44,13 @@
                                     </li>
                                 <?php } else { ?>
                                     <li>
-                                        <a href="<?php echo BASE_URL . 'user_login.php'; ?>"> <button class="btn btn-custom" >Sign In</button> </a>               
+                                        <a href="<?php echo BASE_URL . 'user_login.php'; ?>"> <button class="btn btn-custom" ><span style="color: #bd7abf;font-size: 13px;padding: 2px 12px;background: url(img/gallary.png) 0 -744px no-repeat;"></span>Sign In</button> </a>               
                                     </li>
                                     <li>
-                                        <a href="<?php echo BASE_URL . 'user_registration.php'; ?>"> <button class="btn btn-custom" >Sign Up</button></a>
+                                        <a href="<?php echo BASE_URL . 'user_registration.php'; ?>"> <button class="btn btn-custom" ><span style="color: #bd7abf;font-size: 13px;padding: 2px 12px;background: url(img/gallary.png) 0 -773px no-repeat;"></span>Sign Up</button></a>
+                                    </li>
+                                    <li>
+                                        <a  href="#"> <button class="btn btn-custom" >English<span style="color: #bd7abf;font-size: 13px;padding: 2px 18px;background: url(img/gallary.png) 0 -1433px no-repeat;"></span></button></a>
                                     </li>
                                 <?php } ?>
 
@@ -112,16 +115,16 @@
                     </ul>
                     <ul class="navigation  fadeout">
                         <li>
-                            <a href="<?php echo BASE_URL; ?>"><button class="btn btn-custom1">Home</button></a>
+                            <a class="btn" href="<?php echo BASE_URL; ?>">Home</a>
                         </li>
                         <li>
-                            <a href="<?php echo BASE_URL . 'cook.php?cook=men'; ?>"><button class="btn btn-custom1">Men</button></a>
+                            <a class="btn" href="<?php echo BASE_URL . 'cook.php?cook=men'; ?>">Men</a>
                         </li>
                         <li>
-                            <a href="<?php echo BASE_URL . 'cook.php?cook=women'; ?>"><button class="btn btn-custom1">Women</button></a>
+                            <a class="btn" href="<?php echo BASE_URL . 'cook.php?cook=women'; ?>">Women</a>
                         </li>
                         <li>
-                            <a href="#"><button class="btn btn-custom1">Cuisine</button></a>
+                            <a class="btn" href="#">Cuisine</a>
                         </li>
                     </ul>
                     <!-- ./navigation -->
