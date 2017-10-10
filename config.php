@@ -1,7 +1,7 @@
 <?php
 
-define('BASE_DIR', 'pmtk');
-define('CORE_DIR', 'core');   
+define('BASE_DIR', 'cook');
+define('CORE_DIR', 'core');    
 define('ADMIN_DIR', 'admin');
 define('DIR_SEPERATOR', '/');
 define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . DIR_SEPERATOR . BASE_DIR);
