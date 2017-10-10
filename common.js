@@ -1,6 +1,6 @@
 var ERR_AJAX = "Something went wrong!!! Please try again...";
 var ERR_BLANK_FORM = "Please Fill All the Required Fields...";
-var SUBDIR = '/cook/';
+var SUBDIR = '/pmtk/';
 var FRONT_URL = window.location.protocol + "//" + window.location.host + SUBDIR;
 var loader_div = '<div id="loadingDiv"><img src="' + FRONT_URL + 'images/ajax-loader.gif" class="ajax-loader" alt="Loading..." /></div>';
 var flag = true;

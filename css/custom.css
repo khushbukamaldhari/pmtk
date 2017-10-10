@@ -531,6 +531,7 @@ select option:disabled {
 }
 .page-container .page-header .page-header-holder .navigation > li > a{
     padding: 0px;
+    height: 60px;
 }
 .main-container{
     margin-top: 25px;
