@@ -7,7 +7,7 @@ include_once FL_OPTIONS;
 
 ?>
 <div class='col-md-12 tab_cover_letter tab_panel' style="display: block;">
-    <div class='col-md-12 pane-inner-body'>
+    <div class='col-md-12 pane-inner-body clearfix'>
         <div>
             <label class="pv-top-letter-section__cuisine_headline">
                 <a  data-toggle="collapse" data-target="#cover_letter11">

@@ -35,10 +35,10 @@
                     <?php
                     $user_about_me = $user->get_user_meta($user_id, "about_me", true);
                     ?>
-                    <div id="about_me" class="showmore"> <span><?php echo $user_about_me; ?></span></div>
+                    <div id="about_me" class=""> <span><?php echo $user_about_me; ?></span></div>
                 </div>
                 <div style="text-align: center;">
-                    <button class="btn btn-danger" value="more" id="show_more">Show more</button>
+                    <button class="btn-pink" value="more" id="show_more">Show More</button>
                 </div>
                 
             </div>

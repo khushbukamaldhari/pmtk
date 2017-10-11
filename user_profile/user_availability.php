@@ -2,8 +2,9 @@
     include_once FL_AVAILABILITY;
     $avail->fill_availability();
 ?>
+
 <div class='col-md-12 tab_availability tab_panel'>
-    <div class='col-md-12 pane-inner-body'>
+    <div class='col-md-12 pane-inner-body clearfix'>
         <label class="pv-top-letter-section__cuisine_headline">
             <a  data-target="#availability">
                 <h4>
