@@ -2,6 +2,7 @@
     include_once FL_AVAILABILITY;
     $avail->fill_availability();
 ?>
+
 <div class='col-md-12 tab_availability tab_panel'>
     <div class='col-md-12 pane-inner-body'>
 <!--        <label class="pv-top-letter-section__cuisine_headline">
@@ -11,7 +12,6 @@
                 </h4>
             </a>
         </label>-->
-
         <?php 
             $user_avail = $user->get_user_availability( $user_id );
             $arr_avail_label = $avail->fill_availability( '', true );
