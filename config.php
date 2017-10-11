@@ -62,7 +62,7 @@ define('TBL_USER_AVAILABILITY', 'user_availability');
 
 //File Includes
 
-define('USER_PRO_DIR', 'user_profile');
+define('USER_PRO_DIR', 'user_profile');  
 define('USER_PROFILE', BASE_PATH . DIR_SEPERATOR . 'user_profile.php');
 define('USER_PRO_DETAIL', BASE_PATH . DIR_SEPERATOR . USER_PRO_DIR . DIR_SEPERATOR . 'user_detail.php');
 define('USER_PRO_SPECIALITY', BASE_PATH . DIR_SEPERATOR . USER_PRO_DIR . DIR_SEPERATOR . 'user_speciality.php');
