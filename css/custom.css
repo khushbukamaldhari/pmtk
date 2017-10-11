@@ -121,10 +121,19 @@ a.lnk_tab:hover, a.lnk_tab.active, a.lnk_tab_pf:hover, a.lnk_tab_pf.active{
     color: #000000;
     text-decoration: none;
 }
-a.lnk_tab.active h5{
-    border-right: 4px solid #0088cc;
-    background: #eee;
+a.lnk_tab.active, a.lnk_tab_pf.active {
+    background-color: #da8ae3;
+    color: white;
 }
+a.lnk_tab:hover, a.lnk_tab_pf:hover{
+    color: #da8ae3 !important;
+}
+a.lnk_tab.active h5, a.lnk_tab_pf.active h5{
+    /*border-right: 4px solid #0088cc;*/
+    color: #ffffff;
+    background: #da8ae3;
+}
+
 @media screen and (max-width: 768px){    
     .pane-inner-body:last-child {
         margin-bottom: 0;
@@ -328,10 +337,6 @@ ul.anchor {
     .user-pro-list li > div{
         padding-bottom: 10px;
     }
-}
-a.lnk_tab.active h5{
-    border-right: 4px solid #0088cc;
-    background: #eee;
 }
 .page-container.page-header-fixed .page-header .page-header-holder .navigation > li > a {
     padding: 0px 15px;
@@ -695,11 +700,11 @@ select option:disabled {
     border-top-right-radius: 0;
 }
 
-.artdeco-container-card:last-child {
+/*.artdeco-container-card:last-child {
     margin-bottom: 0;
     padding: 14px 26px;
     position: initial;
-}
+}*/
 .pv-top-card-section {
     margin-top: 0;
 }
@@ -781,7 +786,7 @@ select option:disabled {
 }
 .pv-top-letter-section__cuisine_headline{
     width: 100%;
-    border-bottom: 1px solid #ccc;
+    /*border-bottom: 1px solid #ccc;*/
 }
 .pv-top-letter-section__cuisine_headline h4{
     font-weight: 700;
@@ -1310,12 +1315,7 @@ ul.featured li {
     color:#0088cc;
     font-size: 20px !important;
 }
-a.lnk_tab:hover, a.lnk_tab.active{
-    color: #0088cc;
-    text-decoration: none;
-}
-
-a.lnk_tab{
+a.lnk_tab, a.lnk_tab_pf{
     color: #aaa;
     text-decoration: none;
 }
@@ -1616,3 +1616,45 @@ a.lnk_tab{
     color:black !important;
     font-weight: 600 !important;
 }
+
+
+
+
+/* Vish Changes : 11-10-2017 */
+
+.btn-pink{
+    background: #da8ae3;
+    border-radius: 5px;
+    line-height: 42px;
+    height: 42px;
+    padding: 0 20px;
+    color: white;
+    /*font-family: 'Roboto Slab', serif;*/
+    font-weight: 300;
+    font-size: 1em;
+    box-shadow: 0 2px 0 rgba(0,0,0,.08);
+    cursor: pointer;
+    -webkit-appearance: none;
+    border: 0;
+}
+.btn-pink:hover{
+    background: #CA5CD7;
+}
+.lbl-profile{
+    color: #2d2c2d;
+    font-size: 1.714em;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.lbl-profile:after{
+    content: '';
+    display: block;
+    height: 4px;
+    margin-top: 12px;
+    background: url(../img/gallary.png) 0 -1283px repeat-x;
+}
+.pane-left-heading{
+    padding-right: 15px !important;
+}
+/* Vish Changes Done */

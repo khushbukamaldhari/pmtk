@@ -4,15 +4,15 @@ $user_services_offered = $user->get_user_meta( $user_id, "services_offered", tru
 <div class='col-md-12 tab_services_offered tab_panel'>
     <div class='col-md-12 pane-inner-body clearfix'>
         <div>
-            <label class="pv-top-letter-section__cuisine_headline">
+<!--            <label class="pv-top-letter-section__cuisine_headline">
                 <a data-target="#services_offered">
                     <h4>
                         <?php echo $opt->get_option_value( 'cook', 'services_offered' ); ?>
-                        <!--<span class="glyphicon glyphicon-minus-sign" style="float:right;text-align: center;"></span>-->
+                        <span class="glyphicon glyphicon-minus-sign" style="float:right;text-align: center;"></span>
                     </h4>
 
                 </a>
-            </label>
+            </label>-->
             <div id="services_offered" class="collapse in services_offered" >
                 <div>
                     <?php if( is_array( $user_services_offered ) ) {

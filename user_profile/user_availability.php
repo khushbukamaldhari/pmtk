@@ -4,13 +4,13 @@
 ?>
 <div class='col-md-12 tab_availability tab_panel'>
     <div class='col-md-12 pane-inner-body'>
-        <label class="pv-top-letter-section__cuisine_headline">
+<!--        <label class="pv-top-letter-section__cuisine_headline">
             <a  data-target="#availability">
                 <h4>
                     Availability
                 </h4>
             </a>
-        </label>
+        </label>-->
         <?php 
             $user_avail = $user->get_user_availability( $user_id );
             $arr_avail_label = $avail->fill_availability( '', true );

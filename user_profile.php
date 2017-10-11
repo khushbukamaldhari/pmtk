@@ -44,10 +44,10 @@ $user_membership = $user_city = $user->get_user_meta( $user_id, 'membership', tr
                         <div>
                             <label class="pv-top-letter-section__cuisine_headline" style="margin-bottom: 0;">
                                 <a data-toggle="collapse" data-target="#my_profile1">
-                                    <h4 class="color_blue">
+                                    <h3 class="lbl-profile">
                                         My Cover Letter
 <!--                                        <span class="glyphicon glyphicon-minus-sign" style="float:right;text-align: center;"></span>-->
-                                    </h4>
+                                    </h3>
                                 </a>
                             </label>
                             <div id="my_profile" class="collapse in my_profile" >
@@ -79,10 +79,10 @@ $user_membership = $user_city = $user->get_user_meta( $user_id, 'membership', tr
                         <div>
                             <label class="pv-top-letter-section__cuisine_headline" style="margin-bottom: 0;">
                                 <a data-target="#my_portfolio">
-                                    <h4 class="color_blue">
+                                    <h3 class="lbl-profile">
                                         Portfolio
                                         <!--<span class="glyphicon glyphicon-minus-sign" style="float:right;text-align: center;"></span>-->
-                                    </h4>
+                                    </h3>
                                 </a>
                             </label>
                             <div id="my_portfolio" class="collapse in my_portfolio" >
@@ -101,13 +101,13 @@ $user_membership = $user_city = $user->get_user_meta( $user_id, 'membership', tr
                         </div>
                     </div>
                     
-                    <div class='col-md-12 pv-profile-section pv-top-card-section artdeco-container-card profile_pic_bg'>
+<!--                    <div class='col-md-12 pv-profile-section pv-top-card-section artdeco-container-card profile_pic_bg'>
                         <div>
                             <label class="pv-top-letter-section__cuisine_headline" style="margin-bottom: 0;">
                                 <a  data-target="#my_membership">
                                     <h4 class="color_blue">
                                         Membership
-                                        <!--<span class="glyphicon glyphicon-minus-sign" style="float:right;text-align: center;"></span>-->
+                                        <span class="glyphicon glyphicon-minus-sign" style="float:right;text-align: center;"></span>
                                     </h4>
                                 </a>
                             </label>
@@ -153,7 +153,7 @@ $user_membership = $user_city = $user->get_user_meta( $user_id, 'membership', tr
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
 
 <!--                        <div  id="show_more" class="collapse">
@@ -190,30 +190,30 @@ include_once FL_USER_FOOTER;
 <script>
 
     (function ($) {
-
         //var height = document.getElementById('about_me').style.height;
-        var about_me = $("#about_me").height();
-        alert(about_me);
+        var about_me = parseInt( $("#about_me").height() );
+        console.log( about_me + " - " );
         if(about_me > 43){
-        //alert(about_me);
-        //$("#about_me").height();]
-        $("#show_more").click(function () {
-            if ($(this).val() == "more") {
-                $(this).val('less');
-                $("#show_more").text('Show Less');
-                $("#about_me").removeClass("showmore");
-                $("#about_me").addClass("showless");
-            } else {
-                $(this).val('more');
-                $("#show_more").text('Show More');
-                $("#about_me").addClass("showmore");
-                $("#about_me").removeClass("showless");
-            }
-        });
-    }
-    else{
-        $("#show_more").css("display","none");
-    }
+            //alert(about_me);
+            //$("#about_me").height();
+            $("#about_me").addClass('showmore');
+            $("#show_more").click(function () {
+                if ($(this).val() == "more") {
+                    $(this).val('less');
+                    $("#show_more").text('Show Less');
+                    $("#about_me").removeClass("showmore");
+                    $("#about_me").addClass("showless");
+                } else {
+                    $(this).val('more');
+                    $("#show_more").text('Show More');
+                    $("#about_me").addClass("showmore");
+                    $("#about_me").removeClass("showless");
+                }
+            });
+        }
+        else{
+            $("#show_more").css("display","none");
+        }
     })(jQuery);
 </script>
 <?php

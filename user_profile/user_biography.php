@@ -10,13 +10,13 @@ $user_about_me = $user->get_user_meta( $user_id, "about_me", true );
 <div class='col-md-12 tab_biography tab_panel'>
     <div class='col-md-12 pane-inner-body'>
         <div>
-            <label class="pv-top-letter-section__cuisine_headline">
+<!--            <label class="pv-top-letter-section__cuisine_headline">
                 <a   data-target="#biography">
                     <h4>
                         My Biography
                     </h4>
                 </a>
-            </label>
+            </label>-->
             <div id="biography" class="collapse in biography">
                 <ul class="user-pro-list">                    
                     <li class="clearfix">                    
@@ -51,14 +51,6 @@ $user_about_me = $user->get_user_meta( $user_id, "about_me", true );
                                 }
                             ?>
                             </h4>
-                        </div>
-                    </li>
-                    <li class="clearfix">                    
-                        <div class="col-md-3 col-xs-6 col-sm-6 no-padding">
-                            <h4 class="pv-top-letter-section__cuisine_title"><?php echo $opt->get_option_value( 'cook', 'about_me' ); ?> :</h4>
-                        </div>
-                        <div class="col-md-9 col-xs-6 col-sm-6 overflow_scroll">
-                            <h4 class="pv-top-letter-section-text"><?php echo $user_about_me; ?> :</h4>
                         </div>
                     </li>
                 </ul>
