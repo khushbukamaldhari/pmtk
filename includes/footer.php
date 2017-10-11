@@ -75,7 +75,10 @@
 </body>
 </html>
 <script>
-    (function ($){
-        
+    (function ($) {
+        $(".menu").click(function () {
+            $(".menu").removeClass('active-menu');
+            $(this).addClass('active-menu');
+        });
     })(jQuery);
 </script>

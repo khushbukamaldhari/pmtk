@@ -24,7 +24,7 @@
 
                 <div class='col-md-12 header-up'>
                     <div class='col-md-12 pv-profile-section pv-top-card-section header-top '>
-                        <div class="container" style="margin: 13px auto;"> 
+                        <div class="container" > 
                             <!-- page logo -->
                             <div class="logo">
                                 <a href="<?php echo BASE_URL; ?>"><img src="<?php echo BASE_URL . 'img/logo.png' ?>" alt="Pay Me to Cook" /> </a>
@@ -36,22 +36,31 @@
 
                                 <?php if ($common->check_user_login() == 1) { ?>
                                     <li>
-                                        <a href="<?php echo BASE_URL . 'user_profile.php'; ?>"><button class="btn btn-custom" ><span class="fa fa-user" style="color: #bd7abf;font-size: 17px;padding: 2px;"></span>My Profile</button></a>
-
+                                        <a href="<?php echo BASE_URL . 'user_profile.php'; ?>"><button class="btn btn-custom" ><span style="color: #bd7abf;font-size: 13px;padding: 0px 12px;background: url(img/gallary.png) 0 -773px no-repeat;    background-position: -22px -744px;"></span>My Profile<span style="color: #bd7abf;font-size: 14px;padding-left: 22px;    background: url(img/gallary.png) -18px -1396px no-repeat;"></span></button></a>
+                                    </li>
+                                    <li>
+                                        <a  href="#" data-toggle="dropdown"> <button class="btn btn-custom" >English<span style="color: #bd7abf;font-size: 14px;padding-left: 22px;    background: url(img/gallary.png) -18px -1396px no-repeat;"></span></button></a>
+                                        <ul class="dropdown-menu" style="min-width:127px;" role="menu">
+                                            <li>Deutsch</li>
+                                            <li>Ελληνικά</li>
+                                            <li>Italiano</li>
+                                            <li>Español</li>
+                                        </ul>
                                     </li>
                                     <li>
                                         <a href="<?php echo BASE_URL . 'logout.php'; ?>"><button class="btn btn-custom"  >Logout</button></a>
                                     </li>
+
                                 <?php } else { ?>
                                     <li>
-                                        <a style="color:#fff;" href="<?php echo BASE_URL . 'user_registration.php'; ?>"> <button  class="btn btn-custom sign_up" ><span style="color: #fff;font-size: 20px;" class="fa fa-lock"></span>Sign up</button></a>
+                                        <a style="color:#fff;" href="<?php echo BASE_URL . 'user_registration.php'; ?>"> <button  class="btn btn-custom sign_up" ><span style="color: #bd7abf;font-size: 13px;padding: 0px 12px;background: url(img/gallary.png) 0 -773px no-repeat;    background-position: -22px -744px;"></span>Sign up</button></a>
                                     </li>
                                     <li>
-                                        <a href="<?php echo BASE_URL . 'user_login.php'; ?>"> <button class="btn btn-custom" ><span style="color: #bd7abf;font-size: 13px;padding: 2px 12px;background: url(img/gallary.png) 0 -744px no-repeat;"></span>Sign in</button> </a>               
+                                        <a href="<?php echo BASE_URL . 'user_login.php'; ?>"><button class="btn btn-custom" ><span style="color: #bd7abf;font-size: 13px;padding: 0px 12px;background: url(img/gallary.png) 0 -773px no-repeat;"></span>Sign in</button> </a>               
                                     </li>
-                                    
+
                                     <li>
-                                        <a  href="#" data-toggle="dropdown"> <button class="btn btn-custom" >English<span style="color: #bd7abf;font-size: 13px;padding: 2px 18px;background: url(img/gallary.png) 0 -1433px no-repeat;"></span></button></a>
+                                        <a  href="#" data-toggle="dropdown"> <button class="btn btn-custom" >English<span style="color: #bd7abf;font-size: 14px;padding-left: 22px;    background: url(img/gallary.png) -18px -1396px no-repeat;"></span></button></a>
                                         <ul class="dropdown-menu" style="min-width:127px;" role="menu">
                                             <li>Deutsch</li>
                                             <li>Ελληνικά</li>
@@ -104,34 +113,34 @@
 
                         <?php if ($common->check_user_login() == 1) { ?>
                             <li>
-                                <a href="<?php echo BASE_URL . 'user_profile.php'; ?>"><button class="btn btn-custom1" >My Profile</button></a>
+                                <a class="btn btn-custom1" href="<?php echo BASE_URL . 'user_profile.php'; ?>">My Profile</a>
 
                             </li>
                             <li>
-                                <a href="<?php echo BASE_URL . 'logout.php'; ?>"><button class="btn btn-custom1"  >Logout</button></a>
+                                <a class="btn btn-custom1" href="<?php echo BASE_URL . 'logout.php'; ?>">>Logout</a>
                             </li>
                         <?php } else { ?>
                             <li>
-                                <a href="<?php echo BASE_URL . 'user_login.php'; ?>"> <button class="btn btn-custom1" >Sign In</button> </a>               
+                                <a class="btn btn-custom1" href="<?php echo BASE_URL . 'user_login.php'; ?>"> Sign In</a>               
                             </li>
                             <li>
-                                <a href="<?php echo BASE_URL . 'user_registration.php'; ?>"> <button class="btn btn-custom1" >Sign Up</button></a>
+                                <a class="btn btn-custom1" href="<?php echo BASE_URL . 'user_registration.php'; ?>">Sign Up</a>
                             </li>
                         <?php } ?>
 
                     </ul>
                     <ul class="navigation  fadeout">
                         <li>
-                            <a class="btn" href="<?php echo BASE_URL; ?>">Home</a>
+                            <a class="btn active-menu menu" href="<?php echo BASE_URL; ?>">Home</a>
                         </li>
                         <li>
-                            <a class="btn" href="<?php echo BASE_URL . 'cook.php?cook=men'; ?>">Men</a>
+                            <a class="btn menu" href="<?php echo BASE_URL . 'cook.php?cook=men'; ?>">Men</a>
                         </li>
                         <li>
-                            <a class="btn" href="<?php echo BASE_URL . 'cook.php?cook=women'; ?>">Women</a>
+                            <a class="btn menu" href="<?php echo BASE_URL . 'cook.php?cook=women'; ?>">Women</a>
                         </li>
                         <li>
-                            <a class="btn" href="#">Cuisine</a>
+                            <a class="btn menu" href="#">Cuisine</a>
                         </li>
                     </ul>
                     <!-- ./navigation -->

@@ -40,6 +40,7 @@
                 <div style="text-align: center;">
                     <button class="btn btn-danger" value="more" id="show_more">Show more</button>
                 </div>
+                
             </div>
         </div>
     </div>
