@@ -42,7 +42,7 @@ $user_membership = $user_city = $user->get_user_meta( $user_id, 'membership', tr
                 <div class='col-md-12' id="user_desktop">
                     <div class='col-md-12 pv-profile-section pv-top-card-section artdeco-container-card profile_pic_bg'>
                         <div>
-                            <label class="pv-top-letter-section__cuisine_headline" style="margin-bottom: 0;">
+                            <label class="user-pro-headline" style="margin-bottom: 0;">
                                 <a data-toggle="collapse" data-target="#my_profile1">
                                     <h3 class="lbl-profile">
                                         My Cover Letter
@@ -77,7 +77,7 @@ $user_membership = $user_city = $user->get_user_meta( $user_id, 'membership', tr
                     
                     <div class='col-md-12 pv-profile-section pv-top-card-section artdeco-container-card profile_pic_bg'>
                         <div>
-                            <label class="pv-top-letter-section__cuisine_headline" style="margin-bottom: 0;">
+                            <label class="user-pro-headline" style="margin-bottom: 0;">
                                 <a data-target="#my_portfolio">
                                     <h3 class="lbl-profile">
                                         Portfolio
