@@ -786,6 +786,7 @@ select option:disabled {
 }
 .pv-top-letter-section__cuisine_headline{
     width: 100%;
+    display: none;
     /*border-bottom: 1px solid #ccc;*/
 }
 .pv-top-letter-section__cuisine_headline h4{
@@ -1304,6 +1305,11 @@ ul.featured li {
     color:#aaa;
 }
 
+@media only screen and (max-width: 767px) {    
+    .pv-top-letter-section__cuisine_headline{
+        display: block;
+    }
+}
 @media only screen and (min-width: 767px) {
     .pv-top-letter-section__cuisine_headline h4{
         font-weight: 700;
@@ -1647,7 +1653,10 @@ a.lnk_tab, a.lnk_tab_pf{
     margin-top: 0;
     margin-bottom: 20px;
 }
-.lbl-profile:after{
+.pv-top-letter-section__cuisine_headline{
+    margin-bottom: 15px;
+}
+.lbl-profile:after, .pv-top-letter-section__cuisine_headline:after{
     content: '';
     display: block;
     height: 4px;
@@ -1656,5 +1665,10 @@ a.lnk_tab, a.lnk_tab_pf{
 }
 .pane-left-heading{
     padding-right: 15px !important;
+}
+.user-pro-headline{
+    width: 100%;
+    color: #2d2c2d;
+    font-weight: 300;
 }
 /* Vish Changes Done */
