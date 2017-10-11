@@ -1,5 +1,4 @@
 <?php
-
 define('BASE_DIR', 'pmtk');
 define('CORE_DIR', 'core');
 define('ADMIN_DIR', 'admin');
