@@ -48,7 +48,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="<?php echo BASE_URL . 'logout.php'; ?>"><button class="btn btn-custom"  >Logout</button></a>
+                                        <a href="<?php echo BASE_URL . 'logout.php'; ?>"><button class="btn btn-custom">Logout</button></a>
                                     </li>
 
                                 <?php } else { ?>
@@ -117,7 +117,7 @@
 
                             </li>
                             <li>
-                                <a class="btn btn-custom1" href="<?php echo BASE_URL . 'logout.php'; ?>">>Logout</a>
+                                <a class="btn btn-custom1" href="<?php echo BASE_URL . 'logout.php'; ?>">Logout</a>
                             </li>
                         <?php } else { ?>
                             <li>
