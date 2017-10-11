@@ -11,6 +11,7 @@
                 </h4>
             </a>
         </label>-->
+
         <?php 
             $user_avail = $user->get_user_availability( $user_id );
             $arr_avail_label = $avail->fill_availability( '', true );
