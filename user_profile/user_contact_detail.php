@@ -15,15 +15,15 @@
     }
 ?>
 <div class='col-md-12 tab_contact tab_panel'>
-    <div class='col-md-12 pane-inner-body'>
+    <div class='col-md-12 pane-inner-body clearfix'>
         <div>
-<!--            <label class="pv-top-letter-section__cuisine_headline">
+            <label class="pv-top-letter-section__cuisine_headline">
                 <a   data-target="#contact11">
                     <h4>
                         Contact Details
                     </h4>
                 </a>
-            </label>-->
+            </label>
             <div id="contact11" class="">
                 <ul class="user-pro-list">
                     <li class="clearfix">

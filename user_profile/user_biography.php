@@ -8,15 +8,15 @@ $lnguage = $user->get_user_meta( $user_id, 'language', true, true, $meta_opt_f )
 $user_about_me = $user->get_user_meta( $user_id, "about_me", true );
 ?>
 <div class='col-md-12 tab_biography tab_panel'>
-    <div class='col-md-12 pane-inner-body'>
+    <div class='col-md-12 pane-inner-body clearfix'>
         <div>
-<!--            <label class="pv-top-letter-section__cuisine_headline">
+            <label class="pv-top-letter-section__cuisine_headline">
                 <a   data-target="#biography">
                     <h4>
                         My Biography
                     </h4>
                 </a>
-            </label>-->
+            </label>
             <div id="biography" class="collapse in biography">
                 <ul class="user-pro-list">                    
                     <li class="clearfix">                    
