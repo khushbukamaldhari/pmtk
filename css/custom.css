@@ -3,7 +3,8 @@ html, body{
     /*height: 100%;*/
 }
 body{
-    font-family: 'roboto' !important;
+    font-family: 'Roboto Slab', serif !important;
+    /*font-family: 'roboto' !important;*/
     margin: 0px auto;
     font-weight: 300;
     font-size: 14px;
@@ -99,6 +100,7 @@ body{
     height: 50px;
     float: left;
     display: block;
+    background-size: contain;
 }
 .auto-width{
     width: auto;
@@ -215,7 +217,7 @@ a.lnk_tab.active h5{
     margin: 0px auto;
 }
 .page-container .page-header .col-md-12 .container{
-    margin: 13px auto;
+    margin: 19px auto;
 }
 .page-container .page-header .col-md-12 .navigation li {
     float: left;
@@ -228,9 +230,9 @@ a.lnk_tab.active h5{
     padding: 8px 12px;
     border-radius: 6px;
     background: #fff;
-    border: 0px solid #ddd;
+    border: 0px solid #ccc;
     color: #6d6d6d;
-    box-shadow: 0 0 0 2px #ddd, 0px 2px 0px 2px rgba(0,0,0,.08);
+    box-shadow: 0 0 0 2px #ccc, 0px 2px 0px 2px rgba(0,0,0,.08);
 }
 .btn-custom span{
     font-size: 16px !important;
@@ -243,8 +245,8 @@ a.lnk_tab.active h5{
     padding: 8px 12px;
     border-radius: 6px;
     background: #fff;
-    border: 0px solid #ccc;
-    box-shadow: 0 0 0 2px #cccccc, 0px 2px 0px 2px rgba(0,0,0,.08);
+    border: 0px solid #bababa;
+    box-shadow: 0 0 0 2px #bababa, 0px 2px 0px 2px rgba(0,0,0,.08);
 }
 .btn-custom1{
     text-align: center;
@@ -277,7 +279,7 @@ a.lnk_tab.active h5{
 .page-container .page-header .page-header-holder .navigation {
     float: left;
     padding: 7px 0px;
-    margin-left: 6.2%
+    margin-left: 2.2%
 }
 ul.anchor {
     z-index: 0;
@@ -334,10 +336,10 @@ a.lnk_tab.active h5{
     background: #eee;
 }
 .page-container.page-header-fixed .page-header .page-header-holder .navigation > li > a {
-    padding: 0px 15px;
-    height: 43px;
+    padding: 0px 17px;
+    height: 45px;
     font-size: 15px;
-    line-height: 44px;
+    line-height: 45px;
     font-weight: 300;
     margin: 0px 0px;
     border: 2px transparent;
@@ -573,10 +575,10 @@ select option:disabled {
     background: #dfdfdf !important;
 }
 .page-container .page-header .page-header-holder .navigation > li > a{
-    padding: 0px 15px;
-    height: 43px;
+    padding: 0px 17px;
+    height: 45px;
     font-size: 15px;
-    line-height: 44px;
+    line-height: 45px;
     font-weight: 300;
     margin: 0px 0px;
     border: 2px transparent;
@@ -918,6 +920,12 @@ ul.featured li {
 }
 
 /* 06-10-2017 Khushbu */
+.active-menu{
+    background: #ffecf4 !important;
+    border-radius: 5px !important;
+    color:black !important;
+    font-weight: 600 !important;
+}
 
 @media only screen and (max-width: 1100px){
     .btn-custom1 {
@@ -925,27 +933,40 @@ ul.featured li {
         border: none;
 
     }
+    .page-header-fixed .header-up{
+        display: block;
+    }
+    .active-menu{
+        background: #bc77be !important;
+        border-radius: 0px !important;
+        color:black !important;
+        font-weight: 600 !important;
+    }
+
     .btn-custom1:hover {
         color: #fff;
         border: none;
     }
     .btn-custom{
-        margin: 6px;
+        margin: 2px;
         font-size: 14px;
-        padding: 9px 14px;
+        padding: 3px 6px;
         background: transparent;
         border: 0px solid #ddd;
         color: #6d6d6d;
         box-shadow : none;
     }
     .btn-custom:hover{
-        margin: 6px;
+        margin: 2px;
         font-size: 14px;
-        padding: 9px 14px;
+        padding: 3px 6px;
         background: transparent;
         border: 0px solid #ddd;
         color: #6d6d6d;
         box-shadow : none;
+    }
+    .page-container .page-header .col-md-12 .navigation > li > a {
+        height: 36px;
     }
     .page-container .page-header .col-md-12 .navigation {
         float: right;
@@ -982,8 +1003,8 @@ ul.featured li {
 }
 /*06-10-2017 4:00*/
 .page-container .page-header .page-header-holder .navigation-toggle .navigation-toggle-user {
-    line-height: 60px;
-    height: 60px;
+    line-height: 50px;
+    height: 50px;
     padding: 0px 15px;
     font-size: 17px;
     color: #757575;
@@ -995,12 +1016,12 @@ ul.featured li {
     transition: all 200ms ease;
 }
 .page-container .page-header .page-header-holder .navigation-toggle .navigation-toggle-button {
-    height: 60px;
-    line-height: 60px;
+    height: 50px;
+    line-height: 50px;
 }
 .page-container .page-header .page-header-holder .logo {
     float: left;
-    padding: 6px 0px;
+    padding: 0px 0px;
 }
 .page-container .page-header .page-header-holder .navigation-toggle .navigation-toggle-user:hover {
     color: #454545;
@@ -1077,6 +1098,9 @@ ul.featured li {
 .page-container .page-header .page-header-holder .navigation_user li > ul li {
     width: 100%;
 }
+.page-container .page-header .page-header-holder .navigation li {
+    padding: 0px 2px;
+}
 .page-container .page-header .page-header-holder .navigation_user li:hover > ul {
     display: block;
 }
@@ -1127,8 +1151,8 @@ ul.featured li {
     transition: all 200ms ease;
 }
 .page-container.page-header-fixed .page-header .page-header-holder .navigation_user > li > a {
-    line-height: 50px;
-    height: 50px;
+    line-height: 43px;
+    height: 43px;
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
     -ms-transition: all 200ms ease;
@@ -1148,8 +1172,14 @@ ul.featured li {
     background: #da8ae3;
     color: #fff;
     box-shadow: unset;
+    box-shadow: 0 0 0 2px #da8ae3, 0px 2px 0px 2px rgba(0,0,0,.08);
 }
 .sign_up span{
+    color: #bd7abf;
+    font-size: 13px;
+    padding: 0px 14px;
+    background: url(../img/gallary.png) 0 -773px no-repeat;    
+    background-position: -22px -744px;
     color: #fff;
     font-size: 14px !important;
 }
@@ -1158,8 +1188,32 @@ ul.featured li {
     border:none;
     box-shadow: unset;
     background: #d07cda;
+    box-shadow: 0 0 0 2px #da8ae3, 0px 2px 0px 2px rgba(0,0,0,.08);
+}
+.language a button span{
+    color: #bd7abf;
+    font-size: 14px;
+    padding-left: 22px;    
+    background: url(../img/gallary.png) -15px -1396px no-repeat;
+}
+
+.language_span_open{
+    color: #bd7abf;
+    font-size: 14px;
+    padding-left: 22px;    
+    background: url(../img/gallary.png) -15px -1430px no-repeat;
+    background-position: -13px -1431px;
+}
+.language_span_close{
+    color: #bd7abf;
+    font-size: 14px;
+    padding-left: 22px;    
+    background: url(../img/gallary.png) -15px -1396px no-repeat;
 }
 @media only screen and (max-width: 1100px) {
+    .profile_menu{
+        display: none !important;
+    }
     .page-container .page-header .col-md-12 .logo{
         display: none;
     }
@@ -1171,12 +1225,14 @@ ul.featured li {
     }
     .sign_up {
         background: transparent;
-        color: #6d6d6d;
+        color: #000000;
         box-shadow: unset;
     }
     .sign_up span{
-        color: #da8ae3;
-        font-size: 14px !important;
+        color: #bd7abf;
+        font-size: 13px;
+        padding: 0px 12px;
+        background:url(../img/gallary.png) 0 -744px no-repeat ; 
     }
     .sign_up:hover{
         background: transparent;
@@ -1289,6 +1345,14 @@ ul.featured li {
     }
     .page-container .page-header .col-md-12 .container{
         margin: 0px auto;
+    }
+    #language_li{
+        position: fixed !important;
+        left: 0;
+        padding-left: 5px;
+    }
+    .page-container .page-header .page-header-holder .navigation li {
+        padding: 0px 0px;
     }
 }
 
@@ -1489,9 +1553,10 @@ a.lnk_tab{
 }
 .open>.dropdown-menu {
     display: inline-grid;
-    padding:2px 0px  2px 10px;
-    margin-left: 7px;
+    padding:5px 0px  5px 15px;
+    margin: 0px;
     box-shadow: 0 0 0 1px #da8ae3, 0px 1px 0px 2px rgba(0,0,0,.08);
+    background: #fff0ff;
 }
 .dropdown-menu:before {
     bottom: 0;
@@ -1505,11 +1570,15 @@ a.lnk_tab{
 }
 .open a button{
     box-shadow: 0 0 0 2px #da8ae3, 0px 1px 0px 2px rgba(0,0,0,.08);
+    background :#fff0ff;
 }
 .open>.dropdown-menu  li{
     padding-bottom: 5px;
-}
 
+}
+.open>.dropdown-menu  li a{
+    border:none;
+}
 /*Uttam Jain 09-10-17*/
 .check-resp {
     margin-left: 10px;
@@ -1610,9 +1679,31 @@ a.lnk_tab{
 }
 /*End of code Uttam Jain 09-10-17*/
 
-.active-menu{
-    background: #ffecf4 !important;
-    border-radius: 5px !important;
-    color:black !important;
-    font-weight: 600 !important;
+
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1275px;
+    }
+}
+.page-container .page-header .page-header-holder .logo a {
+    font-size: 1px;
+    color: #FFF;
+    text-indent: 99999px;
+    background: url(../img/logo.png) left no-repeat;
+    width: 159px;
+    height: 50px;
+    float: left;
+    display: block;
+    padding: 5px;
+    background-size: contain !important;
 }

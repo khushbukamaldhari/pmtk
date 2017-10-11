@@ -193,7 +193,6 @@ include_once FL_USER_FOOTER;
 
         //var height = document.getElementById('about_me').style.height;
         var about_me = $("#about_me").height();
-        alert(about_me);
         if(about_me > 43){
         //alert(about_me);
         //$("#about_me").height();]

@@ -80,5 +80,22 @@
             $(".menu").removeClass('active-menu');
             $(this).addClass('active-menu');
         });
+        $("#language").click(function () {
+            if ($("#language").val() == "close") {
+                $("#language").val("open");
+                $(".language").removeClass("language a button span");
+                $("#language  span").removeClass("language_span_close");
+                $("#language  span").addClass("language_span_open");
+                
+
+            } else {
+                $("#language").val("close");
+                 $(".language").addClass("language a button span");
+                $("#language  span").removeClass("language_span_open");
+                $("#language  span").addClass("language_span_close");
+
+
+            }
+        });
     })(jQuery);
 </script>

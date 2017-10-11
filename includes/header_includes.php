@@ -6,4 +6,5 @@
 <!-- EOF CSS INCLUDE -->
 <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>styles.css" media="screen" />                  
 <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>custom.css" media="screen" />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
 <!--<link rel="stylesheet" type="text/css" href="<?php //echo CSS_PATH; ?>homepage.css" media="screen" />-->
